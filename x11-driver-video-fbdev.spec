@@ -38,6 +38,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_libdir}/xorg/modules/drivers/fbdev_drv.la
 %{_libdir}/xorg/modules/drivers/fbdev_drv.so
-%{_mandir}/man4/fbdev.4.bz2
+%{_mandir}/man4/fbdev.*
 
 
