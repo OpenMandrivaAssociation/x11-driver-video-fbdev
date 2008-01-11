@@ -1,3 +1,5 @@
+%define debug_package	%{nil}
+
 Name: x11-driver-video-fbdev
 Version: 0.3.1
 Release: %mkrel 3
@@ -19,10 +21,12 @@ Patch3: 0003-Replace-a-non-ascii-char-with-the-corresponding-grof.patch
 Patch4: 0004-Fixed-leftover-PCIACCESS-XSERVER_LIBPCIACCESS.patch
 Patch5: 0005-Update-for-new-policy-of-hidden-symbols-and-common-m.patch
 ########################################################################
-BuildRequires: x11-proto-devel >= 1.0.0
-BuildRequires: x11-server-devel >= 1.0.1
-BuildRequires: x11-util-macros >= 1.1.5-4mdk
-BuildRequires: x11-util-modular
+BuildRequires: x11-util-macros		>= 1.1.5-4mdk
+#BuildRequires: gcc			>= 4.2.2
+#BuildRequires: glibc-devel		>= 2.7
+BuildRequires: libpixman-1-devel	>= 0.9.6
+BuildRequires: x11-proto-devel		>= 7.3
+BuildRequires: x11-server-devel		>= 1.4
 Conflicts: xorg-x11-server < 7.0
 
 %description
