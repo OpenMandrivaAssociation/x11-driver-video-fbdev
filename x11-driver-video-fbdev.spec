@@ -1,8 +1,6 @@
-%define debug_package	%{nil}
-
 Name: x11-driver-video-fbdev
 Version: 0.3.1
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: The X.org driver for Linux FBDev
 Group: System/X11
 URL: http://xorg.freedesktop.org
