@@ -21,7 +21,7 @@ x11-driver-video-fbdev is the X.org driver for Linux FBDev.
 %setup -q -n xf86-video-fbdev-%{version}
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
