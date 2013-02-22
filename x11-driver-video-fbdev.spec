@@ -12,6 +12,7 @@ Patch1:		BGNoneRoot.patch
 BuildRequires:	x11-proto-devel >= 1.0.0
 BuildRequires:	pkgconfig(xorg-server) >= 1.13
 BuildRequires:	x11-util-macros >= 1.0.1
+BuildRequires:	pkgconfig(pciaccess)
 
 Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
 
@@ -26,7 +27,7 @@ x11-driver-video-fbdev is the X.org driver for Linux FBDev.
 %patch1 -p1
 
 %build
-%configure2_5x
+%configure2_5x	--enable-pciaccess
 %make
 
 %install
