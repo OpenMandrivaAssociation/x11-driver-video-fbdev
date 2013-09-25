@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   xf86-video-fbdev-0.4.3.tar.bz2: 1c0c4ab498010baf1e55b9fb5c7bb23c8d2353d1
+sources:
+  xf86-video-fbdev-0.4.4.tar.bz2: 237ea14a55ca4012d6ce18fbfdc697d48d5838a2
