@@ -1,7 +1,7 @@
 Summary:	X.org driver for Linux FBDev
 Name:		x11-driver-video-fbdev
 Version:	0.5.0
-Release:	3
+Release:	4
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
@@ -18,16 +18,18 @@ Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
 x11-driver-video-fbdev is the X.org driver for Linux FBDev.
 
 %prep
-%setup -qn xf86-video-fbdev-%{version}
-%patch1 -p1
+%autosetup -n xf86-video-fbdev-%{version} -p1
 autoreconf -vif
+sed 's/if XV/ifdef XV/' -i src/fbdev.c
 
 %build
-%configure	--enable-pciaccess
-%make
+%configure \
+	--enable-pciaccess
+
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_libdir}/xorg/modules/drivers/fbdev_drv.so
