@@ -5,7 +5,7 @@ Release:	1
 Group:		System/X11
 License:	MIT
 Url:		https://xorg.freedesktop.org
-Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-fbdev-%{version}.tar.bz2
+Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-fbdev-%{version}.tar.xz
 Patch1:		BGNoneRoot.patch
 
 BuildRequires:	pkgconfig(pciaccess)
