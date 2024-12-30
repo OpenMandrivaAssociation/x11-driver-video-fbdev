@@ -1,11 +1,11 @@
 Summary:	X.org driver for Linux FBDev
 Name:		x11-driver-video-fbdev
-Version:	0.5.0
-Release:	6
+Version:	0.5.1
+Release:	1
 Group:		System/X11
 License:	MIT
 Url:		https://xorg.freedesktop.org
-Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-fbdev-%{version}.tar.bz2
+Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-fbdev-%{version}.tar.bz2
 Patch1:		BGNoneRoot.patch
 
 BuildRequires:	pkgconfig(pciaccess)
