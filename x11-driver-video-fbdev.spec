@@ -1,3 +1,5 @@
+%define _disable_ld_no_undefined 1
+
 Summary:	X.org driver for Linux FBDev
 Name:		x11-driver-video-fbdev
 Version:	0.5.1
